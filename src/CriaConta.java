@@ -6,6 +6,14 @@ public class CriaConta {
         primeiraConta.cpf = "12345678901";
         primeiraConta.saldo = 200.76;
 
-        System.out.println(primeiraConta.numeroConta);
+        ContaBancaria referenciaConta = primeiraConta;
+        referenciaConta.saldo += 100;
+        System.out.println(primeiraConta.saldo); //O output aqui será 300.76. Isso porque referenciaConta não é um novo objeto. Mas sim uma referência ao objeto primeiraConta.
+
+        ContaBancaria segundaConta = new ContaBancaria();
+        segundaConta.numeroConta = 0002;
+        segundaConta.titular = "Neemias Vieira";
+        segundaConta.cpf = "98765432101";
+        segundaConta.saldo = 100;
     }
 }
