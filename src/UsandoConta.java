@@ -1,20 +1,24 @@
 public class UsandoConta {
     public static void main(String[] args) {
         Pessoa primeiraPessoa = new Pessoa();
-        primeiraPessoa.nome = "Diogo Asenjo";
-        primeiraPessoa.cpf = "12345678901";
+        primeiraPessoa.setNome("Diogo Asenjo");
+        primeiraPessoa.setCpf("12345678901");
+        System.out.println(primeiraPessoa.getNome());
+        System.out.println(primeiraPessoa.getCpf());
 
         //CRIANDO UM OBJETO
         ContaBancaria primeiraConta = new ContaBancaria();
-        primeiraConta.numeroConta = 0001;
-        primeiraConta.titular = primeiraPessoa;
+        //primeiraConta.numeroConta = 0001;
+        primeiraConta.setNumeroConta(1);
+        //primeiraConta.titular = primeiraPessoa;
         //primeiraConta.saldo = 200.76; //Como saldo é um atributo privado, isso não irá funcionar
         System.out.println(primeiraConta.getSaldo());
+        System.out.println(primeiraConta.getNumeroConta());
 
         //System.out.println(primeiraConta.titular.nome);
 
         ContaBancaria segundaConta = new ContaBancaria();
-        segundaConta.numeroConta = 0002;
+        //segundaConta.numeroConta = 0002;
         //segundaConta.saldo = 400;
 
         //REFERÊNCIA
