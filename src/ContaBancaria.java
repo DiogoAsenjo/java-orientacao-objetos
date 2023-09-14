@@ -1,8 +1,8 @@
 public class ContaBancaria {
     int numeroConta;
-    String titular;
-    String cpf;
-    double saldo;
+    Pessoa titular;
+    private double saldo = 0;
+    //Com o private, nós deixamos esse atributo de forma que ele não pode ser lido ou alterado a não ser pela própria classe. É o encapsulamento.
 
     public void depositar(double valor) {
         this.saldo += valor;
@@ -18,9 +18,9 @@ public class ContaBancaria {
         } else {
             this.saldo -= valor;
             System.out.println("""
-                Saque efetuado!
-                Saldo atualizado: %.2f
-                """.formatted(this.saldo));
+                    Saque efetuado!
+                    Saldo atualizado: %.2f
+                    """.formatted(this.saldo));
         }
     }
 
@@ -31,9 +31,13 @@ public class ContaBancaria {
             this.saldo -= valor;
             destino.saldo += valor;
             System.out.println("""
-                Transferência efetuada!
-                Saldo atualizado: %.2f
-                """.formatted(this.saldo));
+                    Transferência efetuada!
+                    Saldo atualizado: %.2f
+                    """.formatted(this.saldo));
         }
+    }
+
+    public String getSaldo() {
+        return String.format("Seu saldo atual é: %.2f",this.saldo);
     }
 }
