@@ -1,16 +1,16 @@
 public class ContaBancaria {
     //ATRIBUTOS
     private int numeroConta;
+    private static int totalDeContas;
+    //Aqui estamos deixando o atributo estático, asism ele deixa de ser um atributo de cada objeto, mas sim da classe
     private Pessoa titular;
     private double saldo = 0;
     //Com o private, nós deixamos esse atributo de forma que ele não pode ser lido ou alterado a não ser pela própria classe. É o encapsulamento.
 
     //CONSTRUTOR
-    public ContaBancaria(int numeroConta, double saldo, String nome, String cpf) {
-        if (numeroConta <= 0) {
-            System.out.println("O numero de conta não pode ser menor ou igual a 0");
-        }
-        this.numeroConta = numeroConta;
+    public ContaBancaria (double saldo, String nome, String cpf) {
+        totalDeContas++;
+        this.numeroConta = totalDeContas;
 
         if (saldo < 0) {
             System.out.println("Não é possível criar conta com saldo negativo");
@@ -62,20 +62,16 @@ public class ContaBancaria {
         return numeroConta;
     }
 
-    public void setNumeroConta(int numeroConta) {
-        if (numeroConta <= 0) {
-            System.out.println("Número de conta não pode ser menor ou igual a 0");
-            return;
-        }
-
-        this.numeroConta = numeroConta;
-    }
-
     public void setTitular(Pessoa titular) {
         this.titular = titular;
     }
 
     public Pessoa getTitular() {
         return titular;
+    }
+
+    public static int getTotal() {
+        //Esse méotodo é estático pois assim como o atributo, ele não faz parte de nenhum objeto, mas sim da classe. Ou seja, para ser chamda, pode ser Conta.getTotal();
+        return totalDeContas;
     }
 }
