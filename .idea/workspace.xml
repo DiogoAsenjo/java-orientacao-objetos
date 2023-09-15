@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01f616ef-db95-4c3e-b839-1a0291a35849" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UsandoContaGetESet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestandoConstrutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestandoValores.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ContaBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContaBancaria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UsandoConta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsandoConta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UsandoContaGetESet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsandoContaGetESet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +47,23 @@
     "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.UsandoConta">
+  <component name="RunManager" selected="Application.TestandoConstrutor">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="java-orientacao-objetos" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestandoConstrutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestandoConstrutor" />
+      <module name="java-orientacao-objetos" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestandoValores" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestandoValores" />
       <module name="java-orientacao-objetos" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -69,8 +85,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UsandoConta" />
+        <item itemvalue="Application.TestandoConstrutor" />
+        <item itemvalue="Application.TestandoValores" />
         <item itemvalue="Application.UsandoContaGetESet" />
+        <item itemvalue="Application.UsandoConta" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -91,7 +109,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ContaBancaria.java</url>
-          <line>46</line>
+          <line>61</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

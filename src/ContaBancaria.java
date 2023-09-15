@@ -5,6 +5,21 @@ public class ContaBancaria {
     private double saldo = 0;
     //Com o private, nós deixamos esse atributo de forma que ele não pode ser lido ou alterado a não ser pela própria classe. É o encapsulamento.
 
+    //CONSTRUTOR
+    public ContaBancaria(int numeroConta, double saldo, String nome, String cpf) {
+        if (numeroConta <= 0) {
+            System.out.println("O numero de conta não pode ser menor ou igual a 0");
+        }
+        this.numeroConta = numeroConta;
+
+        if (saldo < 0) {
+            System.out.println("Não é possível criar conta com saldo negativo");
+        }
+        this.saldo = saldo;
+
+        this.titular = new Pessoa(nome, cpf);
+    }
+
     //MÉTODOS
     public void depositar(double valor) {
         this.saldo += valor;
@@ -48,6 +63,11 @@ public class ContaBancaria {
     }
 
     public void setNumeroConta(int numeroConta) {
+        if (numeroConta <= 0) {
+            System.out.println("Número de conta não pode ser menor ou igual a 0");
+            return;
+        }
+
         this.numeroConta = numeroConta;
     }
 

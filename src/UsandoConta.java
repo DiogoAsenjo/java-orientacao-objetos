@@ -1,5 +1,5 @@
-public class UsandoConta {
-    public static void main(String[] args) {
+//public class UsandoConta {
+    /*public static void main(String[] args) {
         Pessoa primeiraPessoa = new Pessoa();
         primeiraPessoa.setNome("Diogo Asenjo");
         primeiraPessoa.setCpf("12345678901");
@@ -41,5 +41,5 @@ public class UsandoConta {
         //primeiraConta.sacar(10);
         //primeiraConta.transferir(10, segundaConta);
         //System.out.println(segundaConta.saldo);
-    }
-}
+//    }
+//}

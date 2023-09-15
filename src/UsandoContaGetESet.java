@@ -1,4 +1,4 @@
-public class UsandoContaGetESet {
+/* public class UsandoContaGetESet {
     public static void main(String[] args) {
         Pessoa primeiraPessoa = new Pessoa();
         primeiraPessoa.setNome("Diogo Asenjo");
@@ -22,5 +22,7 @@ public class UsandoContaGetESet {
 
         primeiraConta.transferir(10, segundaConta);
         System.out.println(segundaConta.getSaldo());
+
+        primeiraConta.sacar(10);
     }
-}
+} */
